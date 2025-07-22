@@ -32,15 +32,15 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
-  color: var(--text-color);
   background: var(--html-bg-color);
 }
 
 main {
   width: clamp(20em, 90%, 25em);
-  border-radius: 0.8em;
   margin: auto;
+  border-radius: 0.8em;
   padding: 2em;
+  gap: var(--font-size);
   background: var(--main-bg-color);
 }
 
@@ -48,29 +48,82 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
-  padding-bottom: 20px;
+  margin-bottom: 1.5em;
 }
 
 header img {
-  width: 100px;
-  height: 100px;
+  width: 6em;
+  height: 6em;
   border-radius: 50%;
+  margin-bottom: 1.5em;
 }
 
-.user-info {
-  text-align: center;
-  width: 100%;
-}
-
-.user-info h1 {
-  margin-bottom: 14px;
-  font-size: 1.8rem;
+header h1 {
+  color: var(--text-color);
+  font-size: 1.6em;
   font-weight: var(--semi-bold);
+  margin-bottom: 0.4rem;
 }
 
-.user-info p {
+header h1 + p {
   font-size: var(--font-size);
   font-weight: var(--bold);
   color: var(--text-highlight-color);
+  margin-bottom: 1.5em;
+}
+
+header p {
+  color: var(--text-color);
+  font-size: var(--font-size);
+  font-weight: var(--regular);
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--font-size);
+}
+
+section ul li a {
+  display: block;
+  text-align: center;
+  border-radius: 0.5em;
+  padding: var(--font-size);
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  font-weight: var(--bold);
+  background: var(--list-bg-color);
+}
+
+section ul li a:active,
+section ul li a:hover {
+  background: var(--text-highlight-color);
+  color: var(--main-bg-color);
+}
+
+footer {
+  color: var(--text-color);
+  font-size: var(--font-size);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+footer a:active,
+footer a:hover {
+  color: var(--text-highlight-color);
+}
+
+@media (max-width: 24em) {
+  main {
+    width: 20em;
+    padding: 1.5em;
+  }
 }
