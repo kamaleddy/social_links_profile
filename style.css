@@ -68,7 +68,7 @@ header h1 + p {
   margin-bottom: 1.5em;
 }
 
-header p {
+header p:last-child {
   color: var(--text-color);
   font-size: var(--font-size);
   font-weight: var(--regular);
