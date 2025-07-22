@@ -25,8 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
+-Desktop view
 ![](./screenshot/Desktop%20View.png)
+-Hover/Active view
 ![](./screenshot/Hover-Active%20View.png)
+-Modile View
 ![](./screenshot/Mobile%20View.png)
 
 ### Links
